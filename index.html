@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BOLLI Spring 2027 Course Calendar</title>
+<style>
+  :root{
+    --navy:#243B53;
+    --a:#CFE3DF;
+    --b:#F3E3C3;
+    --off:#A3B0C2;
+    --line:#8A94A3;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    padding:32px 20px 56px;
+    min-width:790px;
+    background:#fff;
+    color:#1F2933;
+    font:16px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .wrap{width:750px;margin:0 auto}
+
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-weight:normal;
+    font-size:30px;
+    color:var(--navy);
+    margin:0 0 6px;
+  }
+  h1 + .rule{height:3px;background:var(--navy);margin:0 0 22px}
+
+  .legend{border-collapse:collapse;margin:0 0 18px}
+  .legend td{
+    padding:7px 18px;
+    border:1px solid var(--line);
+    font-size:14px;
+    text-align:center;
+  }
+  .legend .a{background:var(--a)}
+  .legend .b{background:var(--b)}
+  .legend .off{background:var(--off)}
+
+  table.cal{
+    border-collapse:collapse;
+    table-layout:fixed;
+    width:750px;
+  }
+  table.cal th,table.cal td{
+    border:1px solid var(--line);
+    padding:9px 6px;
+    vertical-align:top;
+    text-align:center;
+    width:150px;
+  }
+  table.cal thead th{
+    background:var(--navy);
+    color:#fff;
+    font-family:Georgia,"Times New Roman",serif;
+    font-weight:normal;
+    font-size:17px;
+  }
+  .d{display:block;font-weight:700;margin-bottom:2px}
+  .n{display:block;font-size:14px}
+  td.a{background:var(--a)}
+  td.b{background:var(--b)}
+  td.off{background:var(--off)}
+  td.off .d,td.off .n{color:#1B2735}
+
+  @media print{
+    @page{size:letter landscape;margin:.45in}
+    body{padding:0;font-size:10.5px}
+    h1{font-size:20px}
+    .wrap{width:auto}
+    table.cal{width:100%}
+    table.cal th,table.cal td{width:20%}
+    body{min-width:0}
+    table.cal th,table.cal td{padding:4px 6px}
+    tr{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>BOLLI Spring 2027 Course Calendar</h1>
+  <div class="rule"></div>
+
+  <table class="legend">
+    <tr>
+      <td class="a">5a</td>
+      <td class="b">5b</td>
+      <td class="off">No classes</td>
+    </tr>
+  </table>
+
+  <table class="cal">
+    <thead>
+      <tr>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="a"><span class="d">Mar 1</span><span class="n">5a &amp; 10 begin</span></td>
+        <td class="a"><span class="d">Mar 2</span><span class="n">5a &amp; 10 begin</span></td>
+        <td class="a"><span class="d">Mar 3</span><span class="n">5a &amp; 10 begin</span></td>
+        <td class="a"><span class="d">Mar 4</span><span class="n">5a &amp; 10 begin</span></td>
+        <td class="a"><span class="d">Mar 5</span><span class="n">5a &amp; 10 begin</span></td>
+      </tr>
+      <tr>
+        <td class="a"><span class="d">Mar 8</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 9</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 10</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 11</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 12</span><span class="n">5a &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="a"><span class="d">Mar 15</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 16</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 17</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 18</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 19</span><span class="n">5a &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="a"><span class="d">Mar 22</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 23</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 24</span><span class="n">5a &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 25</span><span class="n">5a &amp; 10</span></td>
+        <td class="off"><span class="d">Mar 26</span><span class="n">No Classes/Holiday</span></td>
+      </tr>
+      <tr>
+        <td class="a"><span class="d">Mar 29</span><span class="n">5a ends &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 30</span><span class="n">5a ends &amp; 10</span></td>
+        <td class="a"><span class="d">Mar 31</span><span class="n">5a ends &amp; 10</span></td>
+        <td class="a"><span class="d">Apr 1</span><span class="n">5a ends &amp; 10</span></td>
+        <td class="a"><span class="d">Apr 2</span><span class="n">5a &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="off"><span class="d">Apr 5</span><span class="n">No classes/Makeup</span></td>
+        <td class="off"><span class="d">Apr 6</span><span class="n">No classes/Makeup</span></td>
+        <td class="b"><span class="d">Apr 7</span><span class="n">5b begins &amp; 10</span></td>
+        <td class="b"><span class="d">Apr 8</span><span class="n">5b begins &amp; 10</span></td>
+        <td class="a"><span class="d">Apr 9</span><span class="n">5a ends &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="b"><span class="d">Apr 12</span><span class="n">5b begins &amp; 10</span></td>
+        <td class="b"><span class="d">Apr 13</span><span class="n">5b begins &amp; 10</span></td>
+        <td class="b"><span class="d">Apr 14</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">Apr 15</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">Apr 16</span><span class="n">5b begins &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="b"><span class="d">Apr 19</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">Apr 20</span><span class="n">5b &amp; 10</span></td>
+        <td class="off"><span class="d">Apr 21</span><span class="n">No classes/Holiday</span></td>
+        <td class="off"><span class="d">Apr 22</span><span class="n">No classes/Holiday</span></td>
+        <td class="off"><span class="d">Apr 23</span><span class="n">No classes/Holiday</span></td>
+      </tr>
+      <tr>
+        <td class="off"><span class="d">Apr 26</span><span class="n">No classes/Holiday</span></td>
+        <td class="off"><span class="d">Apr 27</span><span class="n">No classes/Holiday</span></td>
+        <td class="off"><span class="d">Apr 28</span><span class="n">No classes/Holiday</span></td>
+        <td class="off"><span class="d">Apr 29</span><span class="n">No classes/Holiday</span></td>
+        <td class="b"><span class="d">Apr 30</span><span class="n">5b &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="b"><span class="d">May 3</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 4</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 5</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 6</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 7</span><span class="n">5b &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="b"><span class="d">May 10</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 11</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 12</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 13</span><span class="n">5b &amp; 10</span></td>
+        <td class="b"><span class="d">May 14</span><span class="n">5b &amp; 10</span></td>
+      </tr>
+      <tr>
+        <td class="b"><span class="d">May 17</span><span class="n">5b ends &amp; 10 ends</span></td>
+        <td class="b"><span class="d">May 18</span><span class="n">5b ends &amp; 10 ends</span></td>
+        <td class="b"><span class="d">May 19</span><span class="n">5b ends &amp; 10 ends</span></td>
+        <td class="b"><span class="d">May 20</span><span class="n">5b ends &amp; 10 ends</span></td>
+        <td class="b"><span class="d">May 21</span><span class="n">5b ends &amp; 10 ends</span></td>
+      </tr>
+      <tr>
+        <td><span class="d">May 24</span><span class="n">Makeup</span></td>
+        <td><span class="d">May 25</span><span class="n">Makeup</span></td>
+        <td><span class="d">May 26</span><span class="n">Makeup</span></td>
+        <td><span class="d">May 27</span><span class="n">Makeup</span></td>
+        <td><span class="d">May 28</span><span class="n">Makeup</span></td>
+      </tr>
+      <tr>
+        <td><span class="d">May 31</span><span class="n">Memorial Day</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</body>
+</html>
